@@ -21,12 +21,12 @@ void main(){
             }
         }
     }
-    low=a[0];
-    high=a[n-1];
-    mid=(low+high)/2;
+    low=0;
+    high= n-1;
+    mid=(low + high)/2;
     printf("Enter the searching element");
     scanf("%d",&x);
-    for(i=low; i<high;i++)
+    for(i=low;i<high;i++)
     {
         if(x==a[mid])
         {
@@ -43,7 +43,7 @@ void main(){
             high=mid-1;
         }
     }
-    if(a[mid]!x)
+    if(a[mid]!=x)
     {
         printf("Element not found");
     }
