@@ -11,7 +11,7 @@ void main(){
     {
         printf("error");
     }
-    printf(" the content of the file");
+    printf(" the content of the file\n");
     while(fscanf(fptr, "%s", data)!=EOF)
     {
          printf("%s", data);
